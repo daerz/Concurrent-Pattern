@@ -35,6 +35,16 @@ package com.daerz.concurrent.chapter3;
  *          1.保证重排序的有序性不会把后面的指令放到屏障前面,也不会把前面的放到后面
  *          2.强制对缓存的修改操作立刻写入主存
  *          3.如果是写操作,他会导致其他CPU中的缓存失效
+ *          使用场景
+ *              1.状态量标记
+ *              2.屏障前后一致性
+ *      1.CPU结构
+ *      2.JMM大致结构  ++INIT(volatile): read -> main memory -> 10、INIT = 10+1 -> add -> write
+ *      3.缓存一致性协议
+ *      4.指令重排序
+ *      5.happens-before
+ *      6.并发编程三要素
+ *      7.volatile关键字作用
  */
 public class VolatileTest {
 
